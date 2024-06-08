@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int i, a, b;
+    scanf("%d", &i);
+    for (int j = 0; j < i; j++)
+    {
+        char str[100] = "";
+        int n = 0;
+        scanf("%d %d", &a, &b);
+        for (a; a <= b; a++)
+        {
+            sprintf(str, "%d", a);
+            //printf("%s\n", str);
+            for (int j = 0; j < strlen(str); j++)
+            {
+
+                if (str[j] == '1')
+                {
+                    n++;
+                }
+            }
+        }
+        printf("%d\n", n);
+    }
+}
